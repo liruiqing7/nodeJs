@@ -5,18 +5,18 @@ const fs = require("fs");
 // 参数2：必选，表示写入的内容
 // 参数3：必选，文件写入后的回调
 
-// fs.writeFile(
-//   "./file/testWriteFileFun.js",
-//   "const value = true",
-//   { flag: "w+" },
-//   function (err) {
-//     if (err) {
-//       console.log(err);
-//     } else {
-//       console.log("写入成功");
-//     }
-//   }
-// );
+fs.writeFile(
+  "./file/testWriteFileFun.js",
+  "const value = true",
+  { flag: "w+" },
+  function (err) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("写入成功");
+    }
+  }
+);
 
 // readFile 和 createReadStream 的区别 ：
 // readFile 异步读取文件全部内容，并存储在内存中，然后再传递给用户
