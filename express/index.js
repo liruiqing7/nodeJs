@@ -2,6 +2,7 @@ const express = require("express");
 
 const app = express();
 
+// 监听客户端的 GET 和 POST 请求，并根据客户端相应具体内容
 app.get("/user", (req, res) => {
   res.send({
     name: "zs",
